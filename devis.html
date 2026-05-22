@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demander un devis — Vela</title>
+  <meta name="description" content="Demandez un devis personnalisé pour votre service de linge professionnel. Réponse sous 48 heures.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="[REDACTED_CONN_STRING]://400;500;600;700&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>V</text></svg>">
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">VELA</a>
+      <ul class="nav-links">
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#process">Comment ça marche</a></li>
+        <li><a href="index.html#pourquoi">Pourquoi Vela</a></li>
+        <li><a href="index.html#tarifs">Tarifs</a></li>
+        <li><a href="index.html#apropos">À propos</a></li>
+        <li><a href="devis.html" class="nav-cta">Demander un devis →</a></li>
+      </ul>
+      <button class="nav-mobile-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="section devis-page">
+    <div class="container">
+      <div class="quote-form-section">
+        <h2>Demander un devis gratuit</h2>
+        <p class="devis-intro">Recevez une proposition personnalisée adaptée à votre établissement. Sans engagement.</p>
+        <p class="devis-response-time">Nous répondons à chaque demande de devis sous 48 heures.</p>
+
+        <form id="quote-form">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="hotel-name">Nom de l'établissement *</label>
+              <input type="text" id="hotel-name" name="hotel_name" required placeholder="Hôtel du Marais">
+            </div>
+            <div class="form-group">
+              <label for="contact-name">Votre nom *</label>
+              <input type="text" id="contact-name" name="contact_name" required placeholder="Jean Dupont">
+            </div>
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" required placeholder="contact@votre-hotel.fr">
+            </div>
+            <div class="form-group">
+              <label for="phone">Téléphone</label>
+              <input type="tel" id="phone" name="phone" placeholder="06 12 34 56 78">
+            </div>
+            <div class="form-group">
+              <label for="rooms">Nombre de chambres *</label>
+              <input type="number" id="rooms" name="rooms" required placeholder="25" min="1">
+            </div>
+            <div class="form-group">
+              <label for="formula">Formule souhaitée</label>
+              <select id="formula" name="formula">
+                <option value="">Choisir...</option>
+                <option value="location-entretien">Location-Entretien (tout inclus)</option>
+                <option value="entretien-seul">Entretien seul (votre linge)</option>
+                <option value="ne-sait-pas">Je ne sais pas encore</option>
+              </select>
+            </div>
+            <div class="form-group full-width">
+              <label for="address">Adresse de l'établissement *</label>
+              <input type="text" id="address" name="address" required placeholder="12 rue de Rivoli, 75004 Paris">
+            </div>
+            <div class="form-group full-width">
+              <label for="message">Message (optionnel)</label>
+              <textarea id="message" name="message" placeholder="Précisions sur vos besoins, contraintes particulières, questions..."></textarea>
+            </div>
+          </div>
+          <div class="form-submit">
+            <button type="submit" class="btn btn-primary">Envoyer ma demande de devis →</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 Vela. Tous droits réservés.</p>
+        <p><a href="index.html" style="color: rgba(255,255,255,0.8);">Retour au site</a></p>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
